@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>AcademyAdmin</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>s1</servlet-name>
+  <servlet-class>com.Login.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>s1</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>  
+        <servlet-name>search</servlet-name>  
+        <servlet-class>com.Login.Search</servlet-class>  
+   </servlet>  
+  
+   <servlet-mapping>  
+        <servlet-name>search</servlet-name>  
+        <url-pattern>/Search</url-pattern>  
+   </servlet-mapping>
+    
+   <servlet>  
+        <servlet-name>display</servlet-name>  
+        <servlet-class>com.Login.ShowRecords</servlet-class>  
+   </servlet>  
+  
+   <servlet-mapping>  
+        <servlet-name>display</servlet-name>  
+        <url-pattern>/setMasterList</url-pattern>  
+   </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>UpStud</servlet-name>  
+        <servlet-class>com.Login.UpdateStud</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>UpStud</servlet-name>  
+        <url-pattern>/setStudentName</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>UpStudClass</servlet-name>  
+        <servlet-class>com.Login.UpdateAdd</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>UpStudClass</servlet-name>  
+        <url-pattern>/setStudentClass</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>UpTeaName</servlet-name>  
+        <servlet-class>com.Login.UpdateTeach</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>UpTeaName</servlet-name>  
+        <url-pattern>/setTeacherName</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>UpClName</servlet-name>  
+        <servlet-class>com.Login.UpdateClassN</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>UpClName</servlet-name>  
+        <url-pattern>/setClassName</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>UpClSub</servlet-name>  
+        <servlet-class>com.Login.UpdateClassSub</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>UpClSub</servlet-name>  
+        <url-pattern>/assignClassSubj</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>  
+        <servlet-name>UpTeachCl</servlet-name>  
+        <servlet-class>com.Login.UpdateClassTeach</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>UpTeachCl</servlet-name>  
+        <url-pattern>/assignTeacher</url-pattern>  
+    </servlet-mapping>
+</web-app>
