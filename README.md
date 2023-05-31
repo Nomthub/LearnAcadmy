@@ -9,7 +9,7 @@ Learner's Academy is a school that has an online management system. The system k
 *	Assign classes for subjects from the master list
 *	Assign teachers to a class for a subject
 *	Get a master list of students
-*	An option to view a Class Report, which will showall the information about the class such as:
+*	An option to view a Class Report, which will show all the information about the class such as:
     *	the list of students
     * the subjects
     *	the teachers
